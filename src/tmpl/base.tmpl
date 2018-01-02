@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8">
-		<title>{{.Title}}</title>
+		<title>Smart Contract Consulting</title>
+		<meta name="description" content="Smart Contract Consulting">
+		<meta name="keywords" content="smart contract, consulting, security, ethereum, bitcoin, blockchain, solidity">
 	</head>
 	<body>
-		<div id="header">{{.Header}}</div>
-		{{range .Items}}<div id="main">{{ . }}</div>
-		<div id="footer">{{.Footer}}</div>
+		{{template "header" .}}
+		{{template "index" .}}
+		{{template "footer" .}}
 	</body>
 </html>
